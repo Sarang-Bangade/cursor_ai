@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor AI Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-robot"></i>
+                <h1>Cursor AI Assistant</h1>
+            </div>
+            <div class="status">
+                <span class="status-indicator" id="statusIndicator">●</span>
+                <span id="statusText">Ready</span>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="chat-container">
+                <div class="messages" id="messages">
+                    <div class="message assistant">
+                        <div class="message-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="message-content">
+                            <p>Hello! I'm your AI assistant. I can help you with weather information and execute commands. What would you like to do?</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="input-area">
+                    <div class="input-container">
+                        <input type="text" id="userInput" placeholder="Ask me anything..." disabled>
+                        <button id="sendButton" disabled>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="process-panel">
+                    <h3><i class="fas fa-cogs"></i> Process Steps</h3>
+                    <div class="steps" id="steps">
+                        <div class="step-info">
+                            <p>Process steps will appear here when you send a message</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tools-panel">
+                    <h3><i class="fas fa-tools"></i> Available Tools</h3>
+                    <div class="tools-list">
+                        <div class="tool-item">
+                            <i class="fas fa-cloud-sun"></i>
+                            <div>
+                                <strong>Weather Info</strong>
+                                <p>Get weather information for any city</p>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-terminal"></i>
+                            <div>
+                                <strong>Execute Command</strong>
+                                <p>Run system commands safely</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

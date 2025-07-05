@@ -1,0 +1,30 @@
+{
+  "name": "cursor-ai-assistant",
+  "version": "1.0.0",
+  "description": "A beautiful web interface for the Cursor AI Assistant with real-time processing visualization",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "install-deps": "npm install"
+  },
+  "keywords": [
+    "ai",
+    "assistant",
+    "chatbot",
+    "openai",
+    "gemini",
+    "web-interface"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "openai": "^4.67.3",
+    "express": "^4.21.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
+
