@@ -1,9 +1,11 @@
 import OpenAI from "openai";
 import {exec} from "node:child_process"
 import os from "os";
+import  dotenv  from "dotenv";
+dotenv.config();
 
 const openai = new OpenAI({
-    apiKey: "AIzaSyAnmdDBIWb9CulFUb-r2DDhI8G7bdVs4Ao",
+    apiKey: process.env.API_KEY,
     baseURL: "https://generativelanguage.googleapis.com/v1beta/openai/"
 });
 
